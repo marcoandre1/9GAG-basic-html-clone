@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ 
+ /* Add a black background color to the top navigation */
+ .topnav {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+}
+
+.login {
+  margin-left: auto;
+}
+
+.login:hover {
+  cursor: pointer;
+  font-weight: normal !important;
+}
+
+.signup {
+  background-color: deepskyblue;
+  border: solid;
+  border-color: black;
+  border-radius: 5px;
+}
+
+.signup:hover {
+  background-color: skyblue;
+  cursor: pointer;
+  font-weight: normal !important;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+} 
+
+
+
+.vertical-menu {
+  width: 200px; /* Set a width if you like */
+}
+
+.side-nav {
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  overflow-y: scroll;
+}
+
+.popular {
+  color: gray !important;
+  font-weight: bold;
+}
+
+.popular:hover {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+.sections {
+  color: gray !important;
+  font-weight: bold;
+}
+
+.sections:hover {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+.side-nav a {
+  background-color: white; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.side-nav a:hover {
+  background-color: lightgray; /* Dark grey background on mouse-over */
+}
+
+.side-nav a.active {
+  background-color: lightgray; /* Add a green color to the "active/current" link */
+  font-weight: bold;
+}
+
+#main-section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.page {
+  margin-top: 60px;
+  margin-left: 200px;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: white;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  #main-section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+html {
+  overflow-y: scroll;
+}
+
+@media (max-width: 600px) {
+  .side-nav {
+      display: none;
+  }
+  .page {
+    margin-left: 0px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .login {
+    display: none !important;
+  }
+  .signup {
+    display: none !important;
+  }
+}
+
+label,
+textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+textarea {
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+h2:hover {
+  color: deepskyblue;
+  cursor: pointer;
+}
